@@ -17,7 +17,7 @@ public class Appointment {
 
     @ManyToOne
     @JoinColumn(name = "staff_id", nullable = false)
-    private Staffs staff; // Fixed incorrect reference to `User` (should be `Staffs`)
+    private Staffs staff; 
 
     @ManyToOne
     @JoinColumn(name = "facility_id", nullable = true)

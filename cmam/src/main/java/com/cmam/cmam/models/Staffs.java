@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "staffs") // Changed table name from "users" to "staffs"
+@Table(name = "staffs") 
 public class Staffs {
 
     @Id
@@ -26,7 +26,7 @@ public class Staffs {
 
     @ManyToOne
     @JoinColumn(name = "facility_id", nullable = true)
-    private Facility facility; // Fixed incorrect facilityId reference
+    private Facility facility; 
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
